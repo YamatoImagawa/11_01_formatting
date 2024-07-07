@@ -12,6 +12,6 @@ RUN pip install flake8 autopep8
 RUN apt -y install cppcheck clang clang-format
 
 # Java
-RUN apt -y install openjdk-17-jre openjdk-17-jdk
+RUN apt -y update && apt -y install openjdk-17-jre openjdk-17-jdk
 
 WORKDIR /mnt
