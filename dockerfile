@@ -1,6 +1,7 @@
 FROM python:slim
 
 RUN apt -y update && apt -y install git
+RUN apt-get update
 
 # python
 RUN pip install yapf pycodestyle pydocstyle
